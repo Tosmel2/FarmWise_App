@@ -1,0 +1,58 @@
+{
+  "name": "ForumPost",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Post title"
+    },
+    "content": {
+      "type": "string",
+      "description": "Post content/body"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "crop_management",
+        "climate_adaptation",
+        "market_prices",
+        "pest_control",
+        "soil_health",
+        "irrigation",
+        "general"
+      ],
+      "description": "Post category"
+    },
+    "state": {
+      "type": "string",
+      "description": "Farmer's state (optional for location-specific discussions)"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Post tags for better organization"
+    },
+    "likes_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of likes"
+    },
+    "replies_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of replies"
+    },
+    "is_solved": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the question/issue is resolved"
+    }
+  },
+  "required": [
+    "title",
+    "content",
+    "category"
+  ]
+}

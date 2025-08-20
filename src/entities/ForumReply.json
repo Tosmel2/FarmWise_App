@@ -1,0 +1,28 @@
+{
+  "name": "ForumReply",
+  "type": "object",
+  "properties": {
+    "post_id": {
+      "type": "string",
+      "description": "ID of the forum post this reply belongs to"
+    },
+    "content": {
+      "type": "string",
+      "description": "Reply content"
+    },
+    "is_helpful": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether marked as helpful by post author"
+    },
+    "likes_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of likes on this reply"
+    }
+  },
+  "required": [
+    "post_id",
+    "content"
+  ]
+}

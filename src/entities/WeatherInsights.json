@@ -1,0 +1,59 @@
+{
+  "name": "WeatherInsight",
+  "type": "object",
+  "properties": {
+    "state": {
+      "type": "string",
+      "description": "Nigerian state for this insight"
+    },
+    "insight_type": {
+      "type": "string",
+      "enum": [
+        "rainfall_forecast",
+        "temperature_alert",
+        "drought_warning",
+        "flood_risk",
+        "planting_window",
+        "harvest_timing"
+      ],
+      "description": "Type of weather insight"
+    },
+    "title": {
+      "type": "string",
+      "description": "Brief title of the insight"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description and recommendations"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "description": "Severity/importance level"
+    },
+    "valid_until": {
+      "type": "string",
+      "format": "date",
+      "description": "Date until which this insight is valid"
+    },
+    "actions_recommended": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Recommended actions for farmers"
+    }
+  },
+  "required": [
+    "state",
+    "insight_type",
+    "title",
+    "description",
+    "severity"
+  ]
+}

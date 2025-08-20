@@ -1,0 +1,91 @@
+[
+  {
+    "state": "Ekiti",
+    "insight_type": "rainfall_forecast",
+    "title": "Heavy Rainfall Expected",
+    "description": "Heavy rains are forecasted over the next 5 days. Ensure proper drainage to avoid waterlogging in your farm.",
+    "severity": "high",
+    "valid_until": "2025-08-25",
+    "actions_recommended": [
+      "Clear drainage channels",
+      "Avoid applying fertilizer this week",
+      "Harvest mature crops early"
+    ]
+  },
+  {
+    "state": "Lagos",
+    "insight_type": "temperature_alert",
+    "title": "Heatwave Alert",
+    "description": "Temperatures are expected to exceed 35°C for the next 3 days. This may stress young plants.",
+    "severity": "critical",
+    "valid_until": "2025-08-20",
+    "actions_recommended": [
+      "Irrigate crops early morning and evening",
+      "Provide shade for sensitive crops",
+      "Mulch to reduce soil evaporation"
+    ]
+  },
+  {
+    "state": "Kano",
+    "insight_type": "planting_window",
+    "title": "Optimal Planting Window",
+    "description": "Weather conditions this week are ideal for planting maize and millet.",
+    "severity": "medium",
+    "valid_until": "2025-08-22",
+    "actions_recommended": [
+      "Plant maize and millet seeds now",
+      "Apply basal fertilizer during planting"
+    ]
+  },
+  {
+    "state": "Kaduna",
+    "insight_type": "harvest_timing",
+    "title": "Harvesting Time for Rice",
+    "description": "Rice crops are ready for harvest. Ensure timely harvesting to avoid losses.",
+    "severity": "low",
+    "valid_until": "2025-08-30",
+    "actions_recommended": [
+      "Harvest rice crops within the next week",
+      "Store harvested rice in a cool, dry place"
+    ]
+  },
+  {
+    "state": "Oyo",
+    "insight_type": "flood_risk",
+    "title": "Flood Risk Advisory",
+    "description": "Recent heavy rains have increased flood risk in low-lying areas. Monitor water levels closely.",
+    "severity": "medium",
+    "valid_until": "2025-08-28",
+    "actions_recommended": [
+      "Construct temporary barriers if possible",
+      "Move livestock to higher ground",
+      "Avoid planting new crops until flood risk subsides"
+    ]
+  },
+  {
+    "state": "Ogun",
+    "insight_type": "drought_warning",
+    "title": "Drought Conditions Expected",
+    "description": "Low rainfall expected over the next month. Prepare for potential water shortages.",
+    "severity": "high",
+    "valid_until": "2025-09-15",
+    "actions_recommended": [
+      "Implement water conservation techniques",
+      "Mulch to retain soil moisture",
+      "Consider drought-resistant crop varieties"
+    ]
+  },
+    {
+        "state": "Rivers",
+        "insight_type": "flood_risk",
+        "title": "Flood Risk Alert",
+        "description": "Heavy rains in upstream areas may lead to flooding in low-lying farms. Monitor water levels closely.",
+        "severity": "critical",
+        "valid_until": "2025-08-30",
+        "actions_recommended": [
+        "Construct temporary dikes if possible",
+        "Move livestock and equipment to higher ground",
+        "Avoid planting new crops until flood risk subsides"
+        ]
+    }
+]

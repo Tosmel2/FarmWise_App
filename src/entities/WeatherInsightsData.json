@@ -1,0 +1,26 @@
+[
+  {
+    "state": "Lagos",
+    "insight_type": "rainfall_forecast",
+    "title": "Heavy Rain Expected",
+    "description": "Lagos will experience heavy rainfall over the next 3 days. Farmers should prepare drainage channels.",
+    "severity": "high",
+    "valid_until": "2025-08-20",
+    "actions_recommended": [
+      "Clear drainage channels",
+      "Delay planting until rainfall subsides"
+    ]
+  },
+  {
+    "state": "Kano",
+    "insight_type": "drought_warning",
+    "title": "Low Rainfall Alert",
+    "description": "Below average rainfall is expected in Kano this month. Irrigation planning is advised.",
+    "severity": "medium",
+    "valid_until": "2025-08-25",
+    "actions_recommended": [
+      "Plan irrigation schedule",
+      "Use drought-resistant seeds"
+    ]
+  }
+]

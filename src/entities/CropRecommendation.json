@@ -1,0 +1,76 @@
+{
+  "name": "CropRecommendation",
+  "type": "object",
+  "properties": {
+    "crop_name": {
+      "type": "string",
+      "description": "Name of the recommended crop"
+    },
+    "state": {
+      "type": "string",
+      "description": "State for which this recommendation applies"
+    },
+    "season": {
+      "type": "string",
+      "enum": [
+        "dry_season",
+        "wet_season",
+        "year_round"
+      ],
+      "description": "Best planting season"
+    },
+    "climate_resilience_score": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 10,
+      "description": "How well the crop handles climate stress (1-10)"
+    },
+    "water_requirement": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "description": "Water requirement level"
+    },
+    "soil_suitability": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "clay",
+          "sandy",
+          "loam",
+          "silt",
+          "rocky",
+          "mixed"
+        ]
+      },
+      "description": "Suitable soil types"
+    },
+    "planting_tips": {
+      "type": "string",
+      "description": "Specific planting and care tips"
+    },
+    "expected_yield": {
+      "type": "string",
+      "description": "Expected yield description"
+    },
+    "market_potential": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "description": "Market demand and profitability potential"
+    }
+  },
+  "required": [
+    "crop_name",
+    "state",
+    "season",
+    "climate_resilience_score"
+  ]
+}

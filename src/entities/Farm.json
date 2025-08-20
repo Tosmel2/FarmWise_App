@@ -1,0 +1,93 @@
+{
+  "name": "Farm",
+  "type": "object",
+  "properties": {
+    "farm_name": {
+      "type": "string",
+      "description": "Name of the farm"
+    },
+    "location": {
+      "type": "string",
+      "description": "Farm location/address"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "Abia",
+        "Adamawa",
+        "Akwa Ibom",
+        "Anambra",
+        "Bauchi",
+        "Bayelsa",
+        "Benue",
+        "Borno",
+        "Cross River",
+        "Delta",
+        "Ebonyi",
+        "Edo",
+        "Ekiti",
+        "Enugu",
+        "FCT",
+        "Gombe",
+        "Imo",
+        "Jigawa",
+        "Kaduna",
+        "Kano",
+        "Katsina",
+        "Kebbi",
+        "Kogi",
+        "Kwara",
+        "Lagos",
+        "Nasarawa",
+        "Niger",
+        "Ogun",
+        "Ondo",
+        "Osun",
+        "Oyo",
+        "Plateau",
+        "Rivers",
+        "Sokoto",
+        "Taraba",
+        "Yobe",
+        "Zamfara"
+      ],
+      "description": "Nigerian state where farm is located"
+    },
+    "farm_size_hectares": {
+      "type": "number",
+      "description": "Size of farm in hectares"
+    },
+    "soil_type": {
+      "type": "string",
+      "enum": [
+        "clay",
+        "sandy",
+        "loam",
+        "silt",
+        "rocky",
+        "mixed"
+      ],
+      "description": "Primary soil type"
+    },
+    "current_crops": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Currently grown crops"
+    },
+    "farming_experience_years": {
+      "type": "number",
+      "description": "Years of farming experience"
+    },
+    "irrigation_available": {
+      "type": "boolean",
+      "description": "Whether irrigation system is available"
+    }
+  },
+  "required": [
+    "farm_name",
+    "location",
+    "state"
+  ]
+}

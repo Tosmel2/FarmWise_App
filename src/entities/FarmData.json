@@ -1,0 +1,12 @@
+[
+  {
+    "farm_name": "Green Valley Farm",
+    "location": "Ikeja, Lagos",
+    "state": "Lagos",
+    "farm_size_hectares": 2.5,
+    "soil_type": "loam",
+    "current_crops": ["tomatoes", "peppers"],
+    "farming_experience_years": 8,
+    "irrigation_available": true
+  }
+]
