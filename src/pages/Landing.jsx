@@ -33,10 +33,10 @@ export default function Landing() {
       try {
         await User.me();
         // User is logged in, redirect to dashboard
-        window.location.href = createPageUrl("Dashboard");
+        window.location.href = createPageUrl("dashboard");
       } catch (error) {
         // User not logged in, redirect to login
-        await User.loginWithRedirect(window.location.origin + createPageUrl("Dashboard"));
+        await User.loginWithRedirect(window.location.origin + createPageUrl("dashboard"));
       }
     } catch (error) {
       console.error("Login error:", error);
@@ -129,7 +129,7 @@ export default function Landing() {
             <Button 
               onClick={handleGetStarted}
               disabled={isLoading}
-              className="bg-green-600 hover:bg-green-700"
+              className="bg-green-600 hover:bg-green-700 cursor-pointer"
             >
               {isLoading ? "Loading..." : "Get Started"}
             </Button>
