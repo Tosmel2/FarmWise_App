@@ -124,7 +124,7 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-green-600 to-emerald-600 rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 bg-green-600 to-emerald-600 rounded-xl flex items-center justify-center">
                 <Leaf className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -199,7 +199,8 @@ export default function Landing() {
             
             <div className="relative">
               {/* Hero Image Placeholder - Replace with actual image */}
-              <div className="bg-gradient-to-br from-green-400 to-emerald-500 rounded-3xl p-8 shadow-2xl">
+              {/* <div className="bg-gradient-to-br from-green-400 to-emerald-500 rounded-3xl p-8 shadow-2xl"> */}
+              <div className="bg-green-400 rounded-3xl p-8 shadow-2xl">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="bg-white/20 rounded-xl p-4 text-center">
@@ -285,7 +286,8 @@ export default function Landing() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 bg-gradient-to-r from-green-500 to-emerald-600">
+      {/* <section className="py-20 bg-gradient-to-r from-green-500 to-emerald-600"> */}
+      <section className="py-20 bg-green-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
