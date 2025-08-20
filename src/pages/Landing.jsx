@@ -27,22 +27,28 @@ export default function Landing() {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleGetStarted = async () => {
-    setIsLoading(true);
-    try {
-      // Check if user is already logged in
-      try {
-        await User.me();
-        // User is logged in, redirect to dashboard
-        window.location.href = createPageUrl("dashboard");
-      } catch (error) {
-        // User not logged in, redirect to login
-        await User.loginWithRedirect(window.location.origin + createPageUrl("dashboard"));
-      }
-    } catch (error) {
-      console.error("Login error:", error);
-      setIsLoading(false);
-    }
+  // Temporary redirect straight to /dashboard
+  window.location.href = "/dashboard";
   };
+  // Uncomment the following code when ready to implement user login flow
+
+  // const handleGetStarted = async () => {
+  //   setIsLoading(true);
+  //   try {
+  //     // Check if user is already logged in
+  //     try {
+  //       await User.me();
+  //       // User is logged in, redirect to dashboard
+  //       window.location.href = createPageUrl("dashboard");
+  //     } catch (error) {
+  //       // User not logged in, redirect to login
+  //       await User.loginWithRedirect(window.location.origin + createPageUrl("dashboard"));
+  //     }
+  //   } catch (error) {
+  //     console.error("Login error:", error);
+  //     setIsLoading(false);
+  //   }
+  // };
 
   const features = [
     {
