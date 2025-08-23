@@ -79,7 +79,7 @@ export default function Layout() {
                   <Leaf className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h2 className="font-bold text-xl text-gray-900">FarmWise</h2>
+                  <h2 className="font-bold text-xl text-gray-900">FarmClima</h2>
                   <p className="text-sm text-green-600">Climate-Smart Farming</p>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export default function Layout() {
                   <SidebarTrigger className="hover:bg-green-50 p-2 rounded-lg transition-colors duration-200" />
                   <div className="flex items-center gap-2">
                     <Leaf className="w-6 h-6 text-green-600" />
-                    <h1 className="text-lg font-bold text-gray-900">FarmWise</h1>
+                    <h1 className="text-lg font-bold text-gray-900">FarmClima</h1>
                   </div>
                 </div>
               </div>
