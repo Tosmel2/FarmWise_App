@@ -100,7 +100,7 @@ export default function Landing() {
     {
       name: "Aminu Bello",
       location: "Kano State",
-      quote: "FarmWise helped me choose drought-resistant millet varieties. My yields increased by 40% despite less rainfall.",
+      quote: "FarmClima helped me choose drought-resistant millet varieties. My yields increased by 40% despite less rainfall.",
       rating: 5
     },
     {
@@ -128,7 +128,7 @@ export default function Landing() {
                 <Leaf className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">FarmWise</h1>
+                <h1 className="text-xl font-bold text-gray-900">FarmClima</h1>
                 <p className="text-xs text-green-600">Climate-Smart Farming</p>
               </div>
             </div>
@@ -291,7 +291,7 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              How FarmWise Works
+              How FarmClima Works
             </h2>
             <p className="text-xl text-green-100 max-w-3xl mx-auto">
               Get started in three simple steps and transform your farming practice
@@ -341,7 +341,7 @@ export default function Landing() {
               <span className="text-green-600"> Across Nigeria</span>
             </h2>
             <p className="text-xl text-gray-600">
-              See how FarmWise is helping farmers increase yields and build resilience
+              See how FarmClima is helping farmers increase yields and build resilience
             </p>
           </div>
 
@@ -376,7 +376,7 @@ export default function Landing() {
           </h2>
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
             Join thousands of Nigerian farmers who are already adapting to climate change 
-            with FarmWise. Start your journey to more resilient and profitable farming today.
+            with FarmClima. Start your journey to more resilient and profitable farming today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -427,7 +427,7 @@ export default function Landing() {
                   <Leaf className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white">FarmWise</h3>
+                  <h3 className="text-xl font-bold text-white">FarmClima</h3>
                   <p className="text-xs text-green-400">Climate-Smart Farming</p>
                 </div>
               </div>
@@ -469,7 +469,7 @@ export default function Landing() {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2025 FarmWise. Building the future of Nigerian agriculture.</p>
+            <p>&copy; 2025 FarmClima. Building the future of Nigerian agriculture.</p>
           </div>
         </div>
       </footer>
