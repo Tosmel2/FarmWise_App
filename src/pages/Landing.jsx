@@ -55,7 +55,7 @@ export default function Landing() {
       icon: Sprout,
       title: "Smart Crop Recommendations",
       description: "Get AI-powered crop suggestions based on your location, soil type, and climate conditions.",
-      color: "text-green-600"
+      color: "text-[#5EB360]"
     },
     {
       icon: CloudRain,
@@ -124,18 +124,18 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-green-600 to-emerald-600 rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#5EB360] to-emerald-600 rounded-xl flex items-center justify-center">
                 <Leaf className="w-6 h-6 text-white" />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">FarmClima</h1>
-                <p className="text-xs text-green-600">Climate-Smart Farming</p>
+                <p className="text-xs text-[#5EB360]">Climate-Smart Farming</p>
               </div>
             </div>
             <Button 
               onClick={handleGetStarted}
               disabled={isLoading}
-              className="bg-green-600 hover:bg-green-700 cursor-pointer"
+              className="bg-[#5EB360] hover:bg-green-700 cursor-pointer"
             >
               {isLoading ? "Loading..." : "Get Started"}
             </Button>
@@ -148,12 +148,12 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-green-100 text-green-800 mb-6">
+              <Badge className="bg-green-100 text-green-800 mb-6 p-1 px-3 rounded-full ">
                 🌍 Climate-Smart Agriculture Platform
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Adapt, Thrive, and 
-                <span className="text-green-600"> Grow</span> with 
+                <span className="text-[#5EB360]"> Grow</span> with 
                 Climate Change
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -165,7 +165,7 @@ export default function Landing() {
                   size="lg"
                   onClick={handleGetStarted}
                   disabled={isLoading}
-                  className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4"
+                  className="bg-[#5EB360] hover:bg-green-700 text-lg px-8 py-4"
                 >
                   {isLoading ? (
                     "Getting Started..."
@@ -187,11 +187,11 @@ export default function Landing() {
               </div>
               <div className="flex items-center gap-6 mt-8">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <CheckCircle className="w-5 h-5 text-[#5EB360]" />
                   <span className="text-gray-600">100% Free to Start</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <CheckCircle className="w-5 h-5 text-[#5EB360]" />
                   <span className="text-gray-600">Expert Verified Content</span>
                 </div>
               </div>
@@ -221,9 +221,9 @@ export default function Landing() {
               </div>
               
               {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 bg-yellow-400 rounded-full p-3 shadow-lg animate-bounce">
+              {/* <div className="absolute -top-4 -right-4 bg-yellow-400 rounded-full p-3 shadow-lg animate-bounce">
                 <Star className="w-6 h-6 text-yellow-800" />
-              </div>
+              </div> */}
               <div className="absolute -bottom-4 -left-4 bg-blue-400 rounded-full p-3 shadow-lg animate-pulse">
                 <CloudRain className="w-6 h-6 text-blue-800" />
               </div>
@@ -239,7 +239,7 @@ export default function Landing() {
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <stat.icon className="w-8 h-8 text-green-600" />
+                  <stat.icon className="w-8 h-8 text-[#5EB360]" />
                 </div>
                 <div className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</div>
                 <div className="text-gray-600">{stat.label}</div>
@@ -255,7 +255,7 @@ export default function Landing() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
               Everything You Need for 
-              <span className="text-green-600"> Smart Farming</span>
+              <span className="text-[#5EB360]"> Smart Farming</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our comprehensive platform provides all the tools and knowledge needed 
@@ -274,7 +274,7 @@ export default function Landing() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-                  <Button variant="ghost" className="mt-4 p-0 h-auto text-green-600 hover:text-green-700">
+                  <Button variant="ghost" className="mt-4 p-0 h-auto text-[#5EB360] hover:text-green-700">
                     Learn more
                     <ChevronRight className="w-4 h-4 ml-1" />
                   </Button>
@@ -338,7 +338,7 @@ export default function Landing() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
               Trusted by Farmers
-              <span className="text-green-600"> Across Nigeria</span>
+              <span className="text-[#5EB360]"> Across Nigeria</span>
             </h2>
             <p className="text-xl text-gray-600">
               See how FarmClima is helping farmers increase yields and build resilience
@@ -383,7 +383,7 @@ export default function Landing() {
               size="lg"
               onClick={handleGetStarted}
               disabled={isLoading}
-              className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4"
+              className="bg-[#5EB360] hover:bg-green-700 text-lg px-8 py-4"
             >
               {isLoading ? (
                 "Getting Started..."
@@ -423,7 +423,7 @@ export default function Landing() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-green-600 rounded-xl flex items-center justify-center">
+                <div className="w-10 h-10 bg-[#5EB360] rounded-xl flex items-center justify-center">
                   <Leaf className="w-6 h-6 text-white" />
                 </div>
                 <div>

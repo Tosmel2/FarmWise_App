@@ -221,7 +221,7 @@ export default function Recommendations() {
                     <CardHeader>
                       <div className="flex items-center justify-between">
                         <CardTitle className="flex items-center gap-2">
-                          <Sprout className="w-5 h-5 text-green-600" />
+                          <Sprout className="w-5 h-5 text-[#5EB360]" />
                           {rec.crop_name}
                         </CardTitle>
                         <Badge className={getResilienceColor(rec.climate_resilience_score)}>

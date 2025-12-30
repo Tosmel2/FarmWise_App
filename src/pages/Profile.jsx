@@ -205,7 +205,7 @@ export default function Profile() {
               : 'border-red-200 bg-red-50'
           }`}>
             {message.type === 'success' ? (
-              <CheckCircle className="h-4 w-4 text-green-600" />
+              <CheckCircle className="h-4 w-4 text-[#5EB360]" />
             ) : (
               <AlertCircle className="h-4 w-4 text-red-600" />
             )}
@@ -244,7 +244,7 @@ export default function Profile() {
                 <div className="mt-6 pt-4 border-t border-gray-200">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <UserIcon className="w-8 h-8 text-green-600" />
+                      <UserIcon className="w-8 h-8 text-[#5EB360]" />
                     </div>
                     <h3 className="font-semibold text-gray-900">{user?.full_name || "Farmer"}</h3>
                     <p className="text-sm text-gray-600">{user?.email}</p>
@@ -263,7 +263,7 @@ export default function Profile() {
               <Card className="bg-white/80 backdrop-blur-sm shadow-lg">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <UserIcon className="w-5 h-5 text-green-600" />
+                    <UserIcon className="w-5 h-5 text-[#5EB360]" />
                     Personal Information
                   </CardTitle>
                 </CardHeader>
@@ -321,7 +321,7 @@ export default function Profile() {
                   <Button 
                     onClick={savePersonalInfo}
                     disabled={isSaving}
-                    className="w-full bg-green-600 hover:bg-green-700"
+                    className="w-full bg-[#5EB360] hover:bg-green-700"
                   >
                     {isSaving ? (
                       <>
@@ -345,7 +345,7 @@ export default function Profile() {
                 <Card className="bg-white/80 backdrop-blur-sm shadow-lg">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
-                      <MapPin className="w-5 h-5 text-green-600" />
+                      <MapPin className="w-5 h-5 text-[#5EB360]" />
                       Farm Information
                     </CardTitle>
                   </CardHeader>
@@ -455,7 +455,7 @@ export default function Profile() {
                 <Card className="bg-white/80 backdrop-blur-sm shadow-lg">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
-                      <Clock className="w-5 h-5 text-green-600" />
+                      <Clock className="w-5 h-5 text-[#5EB360]" />
                       Current Crops
                     </CardTitle>
                   </CardHeader>
@@ -520,7 +520,7 @@ export default function Profile() {
                 <Button 
                   onClick={saveFarmProfile}
                   disabled={isSaving}
-                  className="w-full bg-green-600 hover:bg-green-700"
+                  className="w-full bg-[#5EB360] hover:bg-green-700"
                   size="lg"
                 >
                   {isSaving ? (

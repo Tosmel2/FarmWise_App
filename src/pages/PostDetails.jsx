@@ -99,7 +99,7 @@ export default function PostDetails() {
                 <span>{format(new Date(post.created_date), "MMM d, yyyy")}</span>
               </div>
               {post.is_solved && (
-                <div className="flex items-center gap-1 text-green-600">
+                <div className="flex items-center gap-1 text-[#5EB360]">
                   <CheckCircle className="w-4 h-4" />
                   <span>Solved</span>
                 </div>

@@ -327,7 +327,7 @@ export default function Weather() {
                         {insight.insight_type === 'rainfall_forecast' && <CloudRain className="w-5 h-5 text-blue-600" />}
                         {insight.insight_type === 'temperature_alert' && <Thermometer className="w-5 h-5 text-red-600" />}
                         {insight.insight_type === 'drought_warning' && <Sun className="w-5 h-5 text-orange-600" />}
-                        {insight.insight_type === 'planting_window' && <Calendar className="w-5 h-5 text-green-600" />}
+                        {insight.insight_type === 'planting_window' && <Calendar className="w-5 h-5 text-[#5EB360]" />}
                         {!['rainfall_forecast', 'temperature_alert', 'drought_warning', 'planting_window'].includes(insight.insight_type) && <AlertTriangle className="w-5 h-5 text-yellow-600" />}
                         {insight.title}
                       </CardTitle>
